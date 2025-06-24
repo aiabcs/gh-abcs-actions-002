@@ -2,6 +2,8 @@
 
 name: 000. CI
 
+run-name: ${{ github.actor }} ran this CI pipe
+
 # Controls when the workflow will run
 on:
   # Allows you to run this workflow manually from the Actions tab
