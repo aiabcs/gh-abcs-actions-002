@@ -8,6 +8,7 @@ run-name: ${{ github.actor }} ran this CI pipe
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  push:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,3 +31,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Echo friendly message with time and emojis
+        run: |
+          echo "👋😊 Hello, friend! The current time is $(date). Have a fantastic day! 🌞🚀✨🎉🥳🌈🌟💡🍀"
